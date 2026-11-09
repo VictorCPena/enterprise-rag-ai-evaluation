@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Evidence Retrieval Lab</title>
+  <style>
+    body {font:16px system-ui;max-width:1060px;margin:40px auto;background:#f6f8fc;color:#172439;padding:20px}
+    header {border-bottom:2px solid #245d91;padding-bottom:20px}
+    input,select,button {padding:12px;font:inherit;margin:8px 0}
+    input {width:min(95%,600px)}
+    button {background:#194d78;color:white;border:0;border-radius:6px;cursor:pointer}
+    button:disabled {opacity:.5;cursor:wait}
+    article {background:white;padding:20px;margin:15px 0;border:1px solid #dce2ea;border-radius:10px}
+    pre {white-space:pre-wrap;overflow-wrap:anywhere}
+    a {color:#155e9c} small {color:#567}
+  </style>
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <small>ENGINEERING DOCUMENTATION · VERIFIED SOURCE SPANS</small>
+    <h1>Evidence Retrieval Lab</h1>
+    <p>Compare retrieval strategies, inspect source spans and view measured evaluation results.</p>
+  </header>
+  <form id="form">
+    <label for="q">Documentation question</label><br>
+    <input id="q" required maxlength="1000" placeholder="Why use a pipeline to prevent data leakage?">
+    <label for="strategy">Retrieval</label>
+    <select id="strategy"><option>hybrid</option><option>lexical</option><option>vector</option></select>
+    <label for="mode">Answer mode</label>
+    <select id="mode"><option value="extractive">Evidence excerpts</option><option value="local-llm">Local LLM (if enabled)</option></select>
+    <button id="submit" type="submit">Search</button>
+  </form>
+  <small id="time" aria-live="polite"></small>
+  <div id="answer" aria-live="polite"></div>
+  <h2>Retrieved chunks</h2><div id="results"></div>
+  <h2>Evaluation</h2><button id="eval" type="button">Load measured metrics</button><pre id="metrics"></pre>
+</body>
+</html>

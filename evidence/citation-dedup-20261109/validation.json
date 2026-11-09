@@ -1,0 +1,73 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0",
+    "rank-bm25": "0.2.2",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.1",
+    "pytest": "9.2.0",
+    "requests": "2.34.2"
+  },
+  "commands": [
+    "EMBED_MODEL=hashing PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest -q",
+    "ruff check rag_platform tests scripts",
+    "ruff format --check rag_platform/store.py tests/test_pro_rag.py",
+    "python3 -m rag_platform.demo --model hashing",
+    "python3 -m rag_platform.abstention_regression",
+    "EMBED_MODEL=hashing python3 -m uvicorn rag_platform.api:app --host 127.0.0.1 --port <ephemeral port>"
+  ],
+  "suite_passed": 23,
+  "http_query_successes": 9,
+  "before_change_failing_regression": "Two overlapping chunks yielded an identical citation twice",
+  "development_set": {
+    "lexical": {
+      "recall_at5": 1.0,
+      "mrr": 0.9583333333333334,
+      "ndcg_at5": 0.9692441461309548,
+      "exact_quote_provenance_rate": 1.0,
+      "negative_abstention_rate": 1.0,
+      "positive_answer_rate": 1.0
+    },
+    "vector": {
+      "recall_at5": 1.0,
+      "mrr": 0.9583333333333334,
+      "ndcg_at5": 0.9692441461309548,
+      "exact_quote_provenance_rate": 0.9166666666666666,
+      "negative_abstention_rate": 1.0,
+      "positive_answer_rate": 0.9166666666666666
+    },
+    "hybrid": {
+      "recall_at5": 1.0,
+      "mrr": 0.9583333333333334,
+      "ndcg_at5": 0.9692441461309548,
+      "exact_quote_provenance_rate": 0.9166666666666666,
+      "negative_abstention_rate": 1.0,
+      "positive_answer_rate": 0.9166666666666666
+    }
+  },
+  "additional_probes": {
+    "lexical": {
+      "negative_abstained": 8,
+      "negative_total": 8,
+      "positive_answered": 6,
+      "positive_total": 8,
+      "all_cited_spans_exact": true
+    },
+    "vector": {
+      "negative_abstained": 8,
+      "negative_total": 8,
+      "positive_answered": 5,
+      "positive_total": 8,
+      "all_cited_spans_exact": true
+    },
+    "hybrid": {
+      "negative_abstained": 8,
+      "negative_total": 8,
+      "positive_answered": 6,
+      "positive_total": 8,
+      "all_cited_spans_exact": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "actual_http": true,
+  "status": 200,
+  "seconds": 0.6170794820000083,
+  "local_model_enabled": true,
+  "result": {
+    "answer": "csv [1]",
+    "citations": [
+      {
+        "id": 1,
+        "doc": "python-csv",
+        "chunk": "af436b37d261adf302fcfb93",
+        "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/csv.rst",
+        "quote": "csv",
+        "source_sha256": "f1b1ae4ac16e984733e454789eb1b18dd7ee2078c22b7e6a1fcd0bff85887587",
+        "start": 1077,
+        "end": 1080
+      }
+    ],
+    "abstained": false,
+    "mode": "local-llm-exact-span",
+    "generation": {
+      "accepted": true,
+      "seconds": 0.3203866530002415,
+      "model": "google/flan-t5-small"
+    }
+  }
+}

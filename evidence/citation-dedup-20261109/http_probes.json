@@ -1,0 +1,275 @@
+{
+  "platform": "linux",
+  "transport": "Uvicorn over actual localhost HTTP",
+  "documents": 12,
+  "health": {
+    "ready": true,
+    "embedding": "hashing",
+    "mode": "extractive"
+  },
+  "corpus_cases_with_duplicate_excerpts_before": [
+    {
+      "strategy": "lexical",
+      "query": "How do I connect to a SQLite database and execute SQL statements?",
+      "citations_before": 3
+    },
+    {
+      "strategy": "vector",
+      "query": "How do I connect to a SQLite database and execute SQL statements?",
+      "citations_before": 2
+    },
+    {
+      "strategy": "hybrid",
+      "query": "How do I connect to a SQLite database and execute SQL statements?",
+      "citations_before": 3
+    }
+  ],
+  "requests": [
+    {
+      "strategy": "lexical",
+      "query": "Why is loading a pickle model from an untrusted source unsafe?",
+      "expected_abstention": false,
+      "http_status": 200,
+      "abstained": false,
+      "citations": [
+        {
+          "id": 1,
+          "doc": "sklearn-model_persistence",
+          "chunk": "9a045d951bfaeeccd0caa305",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "As the other pickle-based persistence\n  mechanisms, it may trigger the execution of malicious code while loading\n  a model from an untrusted source.",
+          "start": 18262,
+          "end": 18410,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        },
+        {
+          "id": 2,
+          "doc": "sklearn-model_persistence",
+          "chunk": "4c0e18233727666a770d77c3",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "While :mod:`pickle` can be used to easily\n  save and load scikit-learn models, it may trigger the execution of malicious\n  code while loading a model from an untrusted source.",
+          "start": 17184,
+          "end": 17359,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        },
+        {
+          "id": 3,
+          "doc": "sklearn-model_persistence",
+          "chunk": "bea78419a8e2a56cafdf191c",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "However, it may trigger the\n  execution of malicious code when loading a model from an untrusted source as\n  any other pickle-based persistence mechanism.",
+          "start": 16768,
+          "end": 16922,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        }
+      ]
+    },
+    {
+      "strategy": "lexical",
+      "query": "Who won the 2099 World Cup?",
+      "expected_abstention": true,
+      "http_status": 200,
+      "abstained": true,
+      "citations": []
+    },
+    {
+      "strategy": "vector",
+      "query": "Why is loading a pickle model from an untrusted source unsafe?",
+      "expected_abstention": false,
+      "http_status": 200,
+      "abstained": false,
+      "citations": [
+        {
+          "id": 1,
+          "doc": "sklearn-model_persistence",
+          "chunk": "9a045d951bfaeeccd0caa305",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "As the other pickle-based persistence\n  mechanisms, it may trigger the execution of malicious code while loading\n  a model from an untrusted source.",
+          "start": 18262,
+          "end": 18410,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        },
+        {
+          "id": 2,
+          "doc": "sklearn-model_persistence",
+          "chunk": "f0fac712f02732cfb0796560",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "You should never load a pickle file from an untrusted source, similarly\nto how you should never execute code from an untrusted source.",
+          "start": 11515,
+          "end": 11649,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        }
+      ]
+    },
+    {
+      "strategy": "vector",
+      "query": "Who won the 2099 World Cup?",
+      "expected_abstention": true,
+      "http_status": 200,
+      "abstained": true,
+      "citations": []
+    },
+    {
+      "strategy": "hybrid",
+      "query": "Why is loading a pickle model from an untrusted source unsafe?",
+      "expected_abstention": false,
+      "http_status": 200,
+      "abstained": false,
+      "citations": [
+        {
+          "id": 1,
+          "doc": "sklearn-model_persistence",
+          "chunk": "9a045d951bfaeeccd0caa305",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "As the other pickle-based persistence\n  mechanisms, it may trigger the execution of malicious code while loading\n  a model from an untrusted source.",
+          "start": 18262,
+          "end": 18410,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        },
+        {
+          "id": 2,
+          "doc": "sklearn-model_persistence",
+          "chunk": "f0fac712f02732cfb0796560",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "You should never load a pickle file from an untrusted source, similarly\nto how you should never execute code from an untrusted source.",
+          "start": 11515,
+          "end": 11649,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        },
+        {
+          "id": 3,
+          "doc": "sklearn-model_persistence",
+          "chunk": "4c0e18233727666a770d77c3",
+          "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+          "quote": "While :mod:`pickle` can be used to easily\n  save and load scikit-learn models, it may trigger the execution of malicious\n  code while loading a model from an untrusted source.",
+          "start": 17184,
+          "end": 17359,
+          "source_sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8",
+          "license": "BSD-3-Clause"
+        }
+      ]
+    },
+    {
+      "strategy": "hybrid",
+      "query": "Who won the 2099 World Cup?",
+      "expected_abstention": true,
+      "http_status": 200,
+      "abstained": true,
+      "citations": []
+    },
+    {
+      "strategy": "lexical",
+      "query": "How do I connect to a SQLite database and execute SQL statements?",
+      "citations_before": 3,
+      "expected_abstention": false,
+      "http_status": 200,
+      "abstained": false,
+      "citations": [
+        {
+          "id": 1,
+          "doc": "python-sqlite3",
+          "chunk": "b895361b6295cd6d0532d1aa",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "In order to execute SQL statements and fetch results from SQL queries,\nwe will need to use a database cursor.",
+          "start": 2864,
+          "end": 2973,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        },
+        {
+          "id": 2,
+          "doc": "python-sqlite3",
+          "chunk": "2fb9c5a86e348f023d08f81b",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "A ``Cursor`` object represents a `database cursor`_\n   which is used to execute SQL statements,\n   and manage the context of a fetch operation.",
+          "start": 49662,
+          "end": 49805,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        },
+        {
+          "id": 3,
+          "doc": "python-sqlite3",
+          "chunk": "f189f172bb9e9e9dd0b02564",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "SQLite is a C library that provides a lightweight disk-based database that\ndoesn't require a separate server process and allows accessing the database\nusing a nonstandard variant of the SQL query language.",
+          "start": 609,
+          "end": 814,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        }
+      ]
+    },
+    {
+      "strategy": "vector",
+      "query": "How do I connect to a SQLite database and execute SQL statements?",
+      "citations_before": 2,
+      "expected_abstention": false,
+      "http_status": 200,
+      "abstained": false,
+      "citations": [
+        {
+          "id": 1,
+          "doc": "python-sqlite3",
+          "chunk": "1c5bef664a33eb771de4661e",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "In order to execute SQL statements and fetch results from SQL queries,\nwe will need to use a database cursor.",
+          "start": 2864,
+          "end": 2973,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        }
+      ]
+    },
+    {
+      "strategy": "hybrid",
+      "query": "How do I connect to a SQLite database and execute SQL statements?",
+      "citations_before": 3,
+      "expected_abstention": false,
+      "http_status": 200,
+      "abstained": false,
+      "citations": [
+        {
+          "id": 1,
+          "doc": "python-sqlite3",
+          "chunk": "1c5bef664a33eb771de4661e",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "In order to execute SQL statements and fetch results from SQL queries,\nwe will need to use a database cursor.",
+          "start": 2864,
+          "end": 2973,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        },
+        {
+          "id": 2,
+          "doc": "python-sqlite3",
+          "chunk": "f189f172bb9e9e9dd0b02564",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "SQLite is a C library that provides a lightweight disk-based database that\ndoesn't require a separate server process and allows accessing the database\nusing a nonstandard variant of the SQL query language.",
+          "start": 609,
+          "end": 814,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        },
+        {
+          "id": 3,
+          "doc": "python-sqlite3",
+          "chunk": "2fb9c5a86e348f023d08f81b",
+          "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+          "quote": "A ``Cursor`` object represents a `database cursor`_\n   which is used to execute SQL statements,\n   and manage the context of a fetch operation.",
+          "start": 49662,
+          "end": 49805,
+          "source_sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+          "license": "PSF-2.0"
+        }
+      ]
+    }
+  ]
+}

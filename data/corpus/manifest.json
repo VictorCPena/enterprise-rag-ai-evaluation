@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sklearn-model_evaluation",
+    "title": "model evaluation",
+    "path": "data/corpus/sklearn-model_evaluation.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/modules/model_evaluation.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "f925d51b7981a45b2e100e69b8cd045f66bbc1ba0edffac6b3c74ec01206f227"
+  },
+  {
+    "id": "sklearn-cross_validation",
+    "title": "cross validation",
+    "path": "data/corpus/sklearn-cross_validation.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/modules/cross_validation.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "30fce89a60c7905c134eb9f66709578e4fe85aff082f49241ce796acddb77657"
+  },
+  {
+    "id": "sklearn-preprocessing",
+    "title": "preprocessing",
+    "path": "data/corpus/sklearn-preprocessing.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/modules/preprocessing.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "92584b6586b422327b2ed65b3a80506aa07eaa849eec9cef5280f8cea431c681"
+  },
+  {
+    "id": "sklearn-pipeline",
+    "title": "pipeline",
+    "path": "data/corpus/sklearn-pipeline.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/modules/compose.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "3d3f58ed92d9300cf0faa893d9b309ad0576f93f6a4501847f64fedecec953f7"
+  },
+  {
+    "id": "sklearn-model_persistence",
+    "title": "model persistence",
+    "path": "data/corpus/sklearn-model_persistence.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/model_persistence.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8"
+  },
+  {
+    "id": "sklearn-ensemble",
+    "title": "ensemble",
+    "path": "data/corpus/sklearn-ensemble.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/modules/ensemble.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "24f886ac482f3c866e2cc7718caa37694fece73b9f23d74755b9010b98f8c8c6"
+  },
+  {
+    "id": "sklearn-feature_extraction",
+    "title": "feature extraction",
+    "path": "data/corpus/sklearn-feature_extraction.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/modules/feature_extraction.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "de4874e4545aee44f5fd5a6fd0deafe34242230be46a881033ea5c98940a2f2b"
+  },
+  {
+    "id": "sklearn-common_pitfalls",
+    "title": "common pitfalls",
+    "path": "data/corpus/sklearn-common_pitfalls.rst",
+    "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.6.1/doc/common_pitfalls.rst",
+    "license": "BSD-3-Clause",
+    "sha256": "6e87d4dcdea788281e15c636dc5b84c07ac29589a71e4164ab85fce94648dca6"
+  },
+  {
+    "id": "python-sqlite3",
+    "title": "sqlite3",
+    "path": "data/corpus/python-sqlite3.rst",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+    "license": "PSF-2.0",
+    "sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175"
+  },
+  {
+    "id": "python-csv",
+    "title": "csv",
+    "path": "data/corpus/python-csv.rst",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/csv.rst",
+    "license": "PSF-2.0",
+    "sha256": "f1b1ae4ac16e984733e454789eb1b18dd7ee2078c22b7e6a1fcd0bff85887587"
+  },
+  {
+    "id": "python-asyncio-task",
+    "title": "asyncio-task",
+    "path": "data/corpus/python-asyncio-task.rst",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/asyncio-task.rst",
+    "license": "PSF-2.0",
+    "sha256": "ab191cfa513cd7f7251ce84c52c3470426395f65d1169dc165298bdeb0dcc5b0"
+  },
+  {
+    "id": "python-statistics",
+    "title": "statistics",
+    "path": "data/corpus/python-statistics.rst",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/statistics.rst",
+    "license": "PSF-2.0",
+    "sha256": "5d12d67adc29c15b0520de33db7db0cf149ce97b40276bb691e5ca9216c495e4"
+  }
+]

@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+data/raw/
+work/
+.env
+*.db
+*.log
+
+# Generated environments and local state
+.venv*/
+.env.*
+!.env.example
+.DS_Store
+*.py[cod]
+*.db-*
+*.sqlite*
+*.duckdb*
+*.joblib
+*.safetensors
+*.pem
+*.key

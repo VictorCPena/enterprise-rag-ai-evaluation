@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--check",
+    "portfolio-internacional-dados-ia/enterprise-rag-ai-evaluation/rag_platform/static/app.js"
+  ],
+  "exit_code": 0,
+  "sha256": "b1215cfcbfa2846d7359208bb3ce1bcfeee53782d9e1533c20fb30493786212a",
+  "stderr": "",
+  "scope": "JavaScript syntax, static asset route and API contracts; browser rendering/interactions not executed",
+  "browser_attempt": "Playwright executable unavailable; official browser download returned HTML rather than a valid archive; not marked passed"
+}

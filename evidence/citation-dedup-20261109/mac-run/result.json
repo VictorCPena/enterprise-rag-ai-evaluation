@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-09",
+  "platform": "macOS Intel, Python 3.13 virtual environment (user-supplied terminal)",
+  "input_sha256": {
+    "terminal_log": "f6eaadd34ce10bf4219651120c5bed763504d7ebea9ee8f037a7c9547d9133e4",
+    "saved_html": "2d30bda8bfdc4e833b1a9da057a5febe139e04ac105feb825a4c9d018908c064"
+  },
+  "tests": {
+    "passed": 23,
+    "warnings": 1,
+    "seconds": 7.64,
+    "warning": "Starlette test client deprecation warning for httpx"
+  },
+  "index": {
+    "embedding": "hashing",
+    "documents": 12,
+    "chunks": 655,
+    "corpus_hashes_verified": true,
+    "sources": [
+      {
+        "document": "sklearn-model_evaluation",
+        "chunks": 141,
+        "sha256": "f925d51b7981a45b2e100e69b8cd045f66bbc1ba0edffac6b3c74ec01206f227"
+      },
+      {
+        "document": "sklearn-cross_validation",
+        "chunks": 43,
+        "sha256": "30fce89a60c7905c134eb9f66709578e4fe85aff082f49241ce796acddb77657"
+      },
+      {
+        "document": "sklearn-preprocessing",
+        "chunks": 58,
+        "sha256": "92584b6586b422327b2ed65b3a80506aa07eaa849eec9cef5280f8cea431c681"
+      },
+      {
+        "document": "sklearn-pipeline",
+        "chunks": 26,
+        "sha256": "3d3f58ed92d9300cf0faa893d9b309ad0576f93f6a4501847f64fedecec953f7"
+      },
+      {
+        "document": "sklearn-model_persistence",
+        "chunks": 20,
+        "sha256": "e1db45ea618d02baa4e5e49d0fbaa27d879e53b05e352d0ffa5d24d20107f7e8"
+      },
+      {
+        "document": "sklearn-ensemble",
+        "chunks": 79,
+        "sha256": "24f886ac482f3c866e2cc7718caa37694fece73b9f23d74755b9010b98f8c8c6"
+      },
+      {
+        "document": "sklearn-feature_extraction",
+        "chunks": 47,
+        "sha256": "de4874e4545aee44f5fd5a6fd0deafe34242230be46a881033ea5c98940a2f2b"
+      },
+      {
+        "document": "sklearn-common_pitfalls",
+        "chunks": 27,
+        "sha256": "6e87d4dcdea788281e15c636dc5b84c07ac29589a71e4164ab85fce94648dca6"
+      },
+      {
+        "document": "python-sqlite3",
+        "chunks": 98,
+        "sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175"
+      },
+      {
+        "document": "python-csv",
+        "chunks": 24,
+        "sha256": "f1b1ae4ac16e984733e454789eb1b18dd7ee2078c22b7e6a1fcd0bff85887587"
+      },
+      {
+        "document": "python-asyncio-task",
+        "chunks": 47,
+        "sha256": "ab191cfa513cd7f7251ce84c52c3470426395f65d1169dc165298bdeb0dcc5b0"
+      },
+      {
+        "document": "python-statistics",
+        "chunks": 45,
+        "sha256": "5d12d67adc29c15b0520de33db7db0cf149ce97b40276bb691e5ca9216c495e4"
+      }
+    ]
+  },
+  "development_evaluation": {
+    "positive_queries_per_strategy": 12,
+    "negative_queries_per_strategy": 4,
+    "strategies": {
+      "lexical": {
+        "recall_at5": 1.0,
+        "mrr": 0.9583333333333334,
+        "ndcg_at5": 0.9692441461309548,
+        "exact_quote_provenance_rate": 1.0,
+        "negative_abstention_rate": 1.0,
+        "positive_answer_rate": 1.0,
+        "latency_ms_p50": 120.11289849760942,
+        "latency_ms_p95": 211.52834743261334
+      },
+      "vector": {
+        "recall_at5": 1.0,
+        "mrr": 0.9583333333333334,
+        "ndcg_at5": 0.9692441461309548,
+        "exact_quote_provenance_rate": 0.9166666666666666,
+        "negative_abstention_rate": 1.0,
+        "positive_answer_rate": 0.9166666666666666,
+        "latency_ms_p50": 99.7882180090528,
+        "latency_ms_p95": 207.74351746367753
+      },
+      "hybrid": {
+        "recall_at5": 1.0,
+        "mrr": 0.9583333333333334,
+        "ndcg_at5": 0.9692441461309548,
+        "exact_quote_provenance_rate": 0.9166666666666666,
+        "negative_abstention_rate": 1.0,
+        "positive_answer_rate": 0.9166666666666666,
+        "latency_ms_p50": 110.87438350659795,
+        "latency_ms_p95": 143.301546110888
+      }
+    },
+    "quality_metrics_match_linux": true
+  },
+  "server_access_log": {
+    "port": 18001,
+    "query_http_200": 3,
+    "search_http_200": 3
+  },
+  "rendered_answer": {
+    "mode": "extractive",
+    "browser_round_trip_ms": 220.8,
+    "citations": [
+      {
+        "id": 1,
+        "document": "python-sqlite3",
+        "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+        "sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+        "start": 2864,
+        "end": 2973,
+        "quote": "In order to execute SQL statements and fetch results from SQL queries,\nwe will need to use a database cursor."
+      },
+      {
+        "id": 2,
+        "document": "python-sqlite3",
+        "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+        "sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+        "start": 609,
+        "end": 814,
+        "quote": "SQLite is a C library that provides a lightweight disk-based database that\ndoesn't require a separate server process and allows accessing the database\nusing a nonstandard variant of the SQL query language."
+      },
+      {
+        "id": 3,
+        "document": "python-sqlite3",
+        "url": "https://raw.githubusercontent.com/python/cpython/v3.12.8/Doc/library/sqlite3.rst",
+        "sha256": "d13bb14223559ffc35b64bcd5e5380dfdbc03e56b40c7a364bea8c0efe341175",
+        "start": 49662,
+        "end": 49805,
+        "quote": "A ``Cursor`` object represents a `database cursor`_\n   which is used to execute SQL statements,\n   and manage the context of a fetch operation."
+      }
+    ],
+    "distinct_excerpts": 3,
+    "source_offsets_verified": true,
+    "query_and_selected_strategy_captured": false,
+    "abstention_render_captured": false
+  }
+}
